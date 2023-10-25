@@ -48,17 +48,17 @@ const User = async (props: Props) => {
                         <TableBody>
                             {Object.entries(userDetails).map(([key, value]) => {
                                 const show =
-                                    typeof value === 'object' ? false : true
+                                    typeof value === 'object' ? false : true;
                                 return (
                                     <>
-                                        {show ? (
+                                        {show && (
                                             <TableRow>
                                                 <TableCell className="font-medium">
                                                     {key.toUpperCase()}
                                                 </TableCell>
-                                                <TableCell>{value}</TableCell>
+                                                <TableCell>{show}</TableCell>
                                             </TableRow>
-                                        ) : null}
+                                        )}
                                     </>
                                 )
                             })}

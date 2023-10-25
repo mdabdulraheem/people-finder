@@ -48,7 +48,7 @@ const User = async (props: Props) => {
                         <TableBody>
                             {Object.entries(userDetails).map(([key, value]) => {
                                 const show =
-                                    typeof value === 'object' ? false : true;
+                                    typeof value === 'object' ? false : value;
                                 return (
                                     <>
                                         {show && (

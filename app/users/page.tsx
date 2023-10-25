@@ -22,7 +22,7 @@ const Users = async (props: Props) => {
                 users.map((user, index) => {
                     return (
                         <Card
-                            className="flex flex-wrap justify-between align-middle mb-2"
+                            className="flex flex-wrap justify-between align-middle mb-2 flex-col sm:flex-row"
                             key={index}
                         >
                             <CardHeader className="flex gap-2 flex-row p-4">
